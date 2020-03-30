@@ -45,12 +45,48 @@ body {font-family: Arial;}
   border: 1px solid #FFFF33;
   border-top: none;
 
+  </style>
+  </head>
+  <body>
+
+  <h2>Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'ACAD')">ACAD</button>
+  <button class="tablinks" onclick="openTab(event, 'About Me')">About Me</button>
 </div>
 
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is the capital city of England.</p>
+</div>
+
+<div id="ACAD" class="tabcontent">
+  <h3>ACAD</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="About Me" class="tabcontent">
+  <h3>About Me</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 </script>
    
 </body>
