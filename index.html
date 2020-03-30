@@ -34,27 +34,176 @@ body, html {
   height: 100%;
 }
 
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#Home {background-color: #666699;}
+#News {background-color: #339900;}
+#Contact {background-color: #6699cc;}
+#About {background-color: #003366;}
 </style>
 </head>
 <body>
 
-<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+<button class="tablink" onclick="openPage('Home', this, '#666699')">Home</button>
+<button class="tablink" onclick="openPage('News', this, '#339900')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, '#6699cc')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, '#003366')">About</button>
 
 <div id="Home" class="tabcontent">
   <h3>Home</h3>
-  <p>Home is where the heart is..</p>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>GET RICK ROLLED</h1>
+  <p>EZ</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://everythingexcelblog.files.wordpress.com/2016/09/rolled.png?w=656" style="width:100%">
+    <img src="http://2.bp.blogspot.com/-AXkkbmFRErs/TjCZIWGawfI/AAAAAAAAAlk/lT8yTGBYh38/s1600/Rick-Roll3.png" style="width:100%">
+    <img src="https://i.ytimg.com/vi/hAq443fhyDo/maxresdefault.jpg" style="width:100%">
+    <img src="http://www.todayifoundout.com/wp-content/uploads/2017/11/rick-astley.png" style="width:100%">
+    <img src="http://akns-images.eonline.com/eol_images/Entire_Site/201615/rs_1024x759-160205145107-1024.7.Rick-Astley-Rick-Rolling.jl.020516.jpg" style="width:100%">
+    <img src="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/07/RICK_ROLL.jpg" style="width:100%">
+    <img src="http://2.bp.blogspot.com/--HWVGMTEpLc/U3BR77Qte4I/AAAAAAAAG88/GeCRPD9Smic/s1600/rickrolled.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://riotfest.org/wp-content/uploads/2017/01/rick-astley-698x392.jpg" style="width:100%">
+    <img src="http://vignette1.wikia.nocookie.net/ultradragonball/images/5/5e/Tumblr_lwizcpFo3q1qjrs4wo6_250.gif/revision/latest?cb=20130303164619" style="width:100%">
+    <img src="http://3.bp.blogspot.com/-KdDMxFlKxeI/Ta4o9maklzI/AAAAAAAAACc/jpkYLsB-hnI/s1600/Rick+Roll.jpeg" style="width:100%">
+    <img src="https://i.ytimg.com/vi/m54ijeqnPVk/maxresdefault.jpg" style="width:100%">
+    <img src="https://stalebread.files.wordpress.com/2008/03/rickrolled.gif?w=468" style="width:100%">
+    <img src="http://img4.wikia.nocookie.net/__cb20110525121551/da.uncyclopedia/images/thumb/e/ec/U_got_Rick_Roll%27d.jpg/500px-U_got_Rick_Roll%27d.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="3.bp.blogspot.com/_01nIg59Y3T4/R_lyVwx4nyI/AAAAAAAABcI/0gKWiEIxlkw/s400/Astley.jpg
+" style="width:100%">
+    <img src="http://images5.fanpop.com/image/photos/26500000/Rick-Rolled-rick-astley-26587129-333-493.jpg" style="width:100%">
+    <img src="https://i2.wp.com/www.chesterbugle.co.uk/wp-content/uploads/2018/02/rick-astley.jpg?fit=654%2C372" style="width:100%">
+    <img src="http://i.ytimg.com/vi/uxsWjeiQ76s/maxresdefault.jpg" style="width:100%">
+    <img src="https://cdn-images-1.medium.com/max/1200/1*Q4NthbAp31-XWhPGb4Md-A.gif" style="width:100%">
+    <img src="http://i.ytimg.com/vi/RiJ-lxa2pk4/hqdefault.jpg" style="width:100%">
+    <img src="http://rulefortytwo.com/wp-content/uploads/2013/08/rick3907.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Rick_Astley_Dallas.jpg" style="width:100%">
+    <img src="https://shifter.sapo.pt/wp-content/uploads/2018/03/rickrolled.png" style="width:100%">
+    <img src="http://files.gamebanana.com/img/ico/sprays/rickrolled.png" style="width:100%">
+    <img src="https://davidkelly.me/wp-content/uploads/2014/04/rick-roll_o_724794.jpg" style="width:100%">
+    <img src="http://hepsi10numara.com/wp-content/uploads/2013/11/RICK-ASTLEY.jpg" style="width:100%">
+    <img src="https://www.counterculture.nl/wp-content/uploads/2014/02/rick-astley.png" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 </div>
 
 <div id="News" class="tabcontent">
-  <h3>News</h3>
-  <p>Some news this fine day!</p> 
+ <article>
+  <header>
+    <h1 style="color:Tomato;">YESSSSS</h1>
+ <article>
 </div>
 
 <div id="Contact" class="tabcontent">
@@ -63,8 +212,7 @@ body, html {
 </div>
 
 <div id="About" class="tabcontent">
-  <h3>About</h3>
-  <p>Who we are and what we do.</p>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HQHiuns6zKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <script>
