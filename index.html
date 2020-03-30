@@ -46,17 +46,17 @@ body {font-family: Arial;}
 
 <div id="Home" class="tabcontent">
   <h3>Home</h3>
-  <p>Home is the capital city of England.</p>
+  <p>Welcome to my personal portfolio.</p>
 </div>
 
 <div id="ACAD" class="tabcontent">
   <h3>ACAD</h3>
-  <p>Paris is the capital of France.</p> 
+  <p>Advanced Computer Aided Design.</p> 
 </div>
 
 <div id="About Me" class="tabcontent">
   <h3>About Me</h3>
-  <p>Tokyo is the capital of Japan.</p>
+  <p>Thomas Woo.</p>
 </div>
 
 <script>
@@ -70,7 +70,7 @@ function openTab(evt, tabName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
